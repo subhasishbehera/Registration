@@ -4,9 +4,176 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Page</title>
-    <link rel="stylesheet" href="C:\Users\Subhasish\Downloads\testpagestyles.css">
 </head>
 <body>
+    /* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 140vh;
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #001f3f;
+    color: #ffffff;
+    padding: 20px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: 500;
+}
+
+.back-button {
+    position: absolute;
+    left: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 5px 10px;
+    border-radius: 4px;
+    background-color: #004080;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #002851;
+}
+
+/* Container */
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #001f3f, #2169ee);
+    padding: 20px;
+}
+
+/* Form Container */
+.form-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px 40px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Headings */
+h2 {
+    color: #001f3f;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* Button Group */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #005b96;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    flex: 1;
+}
+
+.btn:hover {
+    background-color: #004080;
+    transform: scale(1.05);
+}
+
+/* Secondary Button */
+.btn-secondary {
+    background-color: #001f3f;
+}
+
+.btn-secondary:hover {
+    background-color: #000e29;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #ffffff;
+    color: #070101;
+    text-align: left;
+    padding: 20px 10px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer ul li {
+    margin: 10px 0;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .form-container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .button-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn {
+        font-size: 1rem;
+    }
+}
+
     <!-- Header Section -->
     <header class="header">
         <a href="index.html" class="back-button">&larr; Back</a>
