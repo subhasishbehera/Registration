@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Page</title>
+    <link rel="stylesheet" href="C:\Users\Subhasish\Downloads\testpagestyles.css">
 </head>
-<body>
-    /* General Styles */
 <style>
-body {
+    body {
     margin: 0;
     font-family: 'Arial', sans-serif;
     background-color: #f9f9f9;
@@ -173,9 +172,27 @@ p {
     .btn {
         font-size: 1rem;
     }
+    .social {
+        margin-top: 20px;
+      }
+      
+      .social p {
+        margin: 0;
+      }
+      
+      .social a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: #007bff;
+        transition: color 0.3s;
+      }
+      
+      .social a:hover {
+        color: #0056b3;
+      }
 }
 </style>
-
+<body>
     <!-- Header Section -->
     <header class="header">
         <a href="index.html" class="back-button">&larr; Back</a>
@@ -202,6 +219,12 @@ p {
             <li><a href="committees.html">Committees</a></li>
             <li><a href="resources.html">Resources</a></li>
         </ul>
+        <div class="social">
+            <p>Contact us:</p>
+            <a href="mailto:example@mumnsoc.com">Email</a>
+            <a href="https://instagram.com/mumnsoc" target="_blank">Instagram</a>
+            <a href="https://mumnsoc.com" target="_blank">MUNSociety</a>
+        </div>
     </footer>
 </body>
 </html>
